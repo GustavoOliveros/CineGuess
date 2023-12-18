@@ -10,6 +10,7 @@ import tw from 'twrnc';
 import { useState } from 'react';
 import { BASE_IMG } from '../../../config/main';
 import PrimaryButton from '../../components/PrimaryButton';
+import { ArrowRightIcon } from 'react-native-heroicons/solid';
 
 export default function Questions({ index, setIndex, score, setScore, data }) {
     const [selectedValue, setSelectedValue] = useState(null);
