@@ -13,7 +13,9 @@ export default function HomeScreen({ navigation }) {
                 <Text style={tw`text-lg mb-5`}>Versión 0.0.1</Text>
 
                 <LinkButton title='Jugar' screenName='Genres' style="mb-5 bg-white w-full" textStyle='text-black' />
-                <LinkButton title='Puntuación' screenName='History' style='w-full' />
+                <LinkButton title='Puntuación' screenName='History' style='w-full mb-5' />
+                <LinkButton title='Ranking' screenName='Ranking' style='w-full' />
+
             </View>
             
         </Authenticated>

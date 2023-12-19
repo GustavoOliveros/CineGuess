@@ -8,6 +8,13 @@ const axiosInstance = axios.create({
     },
 });
 
+export const axiosPlayersAPI = axios.create({
+    baseURL: 'https://cineguessback-production.up.railway.app/api/',
+    headers: {
+        accept: 'application/json'
+    }
+})
+
 export const API_DEFAULT_PARAMS = {
     adult: 'false',
     language: 'es-MX'

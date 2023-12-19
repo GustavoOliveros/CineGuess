@@ -4,6 +4,7 @@ import HomeScreen from './views/Home/Home';
 import GenresScreen from './views/Genres/Genres';
 import HistoryScreen from './views/History/History';
 import GameScreen from './views/Game/Game';
+import RankingScreen from './views/Ranking/Ranking';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +34,11 @@ export default function App() {
                     name="Game"
                     component={GameScreen}
                     options={{ title: 'Partida en juego' }}
+                />
+                <Stack.Screen
+                    name="Ranking"
+                    component={RankingScreen}
+                    options={{ title: 'Ranking' }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
